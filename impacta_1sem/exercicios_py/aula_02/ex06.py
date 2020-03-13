@@ -6,7 +6,6 @@ lata_cobertura = (3*18)
 lata_custo = 80
 
 latas_preciso = math.ceil((metros/lata_cobertura))
-#latas_preciso = round((metros/lata_cobertura))
 latas_valor = float(latas_preciso * lata_custo)
 
 
