@@ -11,7 +11,6 @@ soma = 0
 impares = 1
 i = 1
 
-
 while i <= 20:
     print(impares)
     print(calcula_fator(impares))
