@@ -31,8 +31,7 @@ def le_e_devolve_maior():
     while True:
         if n > 0:
             maior = n
-
-        if n < 0:
+        else:
             break
 
         n = int(input())
