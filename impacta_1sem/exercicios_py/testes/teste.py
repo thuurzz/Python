@@ -1,38 +1,23 @@
-# Lucas da Silva Santos RA: 1904209
-# Arthur Vinicius Santos Silva RA: 1903665
-# Brasilio Soares de Campos Neto RA: 1902861
-
-def calc_fat(n):
-    fator = 1
-    cont = 1
-
-    while (cont <= n):
-        fator = (fator * cont)
-        cont = cont + 1
-    return (fator)
-
-
-def pede_impar():
-    while True:
-        n = int(input('Digite um numero impar: '))
-        if n % 2 == 0 and n != 1:
-            print('Numero invalido, tente nomanente:')
-        else:
-            break
-    return n
-
-
-def soma_fat_impar(n):
+# Escreva a funcao checa_quantidade_divisores(n, qtd) na sequencia:
+def checa_quantidade_divisores(n, qtd):
+    qtd_divisores = 0
     i = 1
-    soma = 0
+    divisor = False
+
     while i <= n:
-        soma += calc_fat(i)
-        i += 2
+        if (n % i) == 0:
+            qtd_divisores += 1
+        i += 1
 
-    return soma
+    if qtd == qtd_divisores:
+        divisor = True
 
+    return divisor
 
-a = soma_fat_impar(pede_impar())
-print('O valor da soma dos fatoriais impares ate o numero digitado, resulta em: {}'.format(a))
-
-
+# Programa principal (ja implementado, voce nao precisa se preocupar com o codigo partir deste ponto)
+n = int(input())
+qtd = int(input())
+if checa_quantidade_divisores(n, qtd): # se a funcao devolve True, entao...
+	print(n, "possui", qtd, "divisores")
+else:
+	print(n, "nao possui", qtd, "divisores")
