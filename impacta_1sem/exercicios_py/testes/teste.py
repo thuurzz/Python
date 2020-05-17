@@ -1,6 +1,28 @@
-string = 'Eu estou bem'
-tupla = (40, 33, 22, 53, 98, 10)
-lista = [25, 44, 99]
-print('ocorrências da letra e na string:', string.count('e'))
-print('ocorrências do número 22 na tupla:', tupla.count(22))
-print('ocorrências do número 100 na lista:', lista.count(100))
+def cria_matriz(m, n, valor):
+    """
+    m: número de linhas
+    n: número de colunas
+    valor: valor inicial
+    """
+    matriz = []
+    for i in range(m):
+        linha = [valor] * n
+        matriz.append(linha)
+    return matriz
+
+def imprime_matriz(A):
+    lin_a = len(A)
+    col_a = len(A[0])
+    for i in range(lin_a): # i varia de 0 até lin_a - 1
+        for j in range(col_a): # j varia de 0 até col_a - 1
+            print("%7.2f" % A[i][j], end='')
+        print() # força um "pula linha" para cada linha da matriz
+
+# Programa principal:
+A = cria_matriz(3, 5, 0)
+print("Antes:")
+imprime_matriz(A)
+print("Depois:")
+A[0][1] = 135
+A[1][2] = 352
+imprime_matriz(A)
