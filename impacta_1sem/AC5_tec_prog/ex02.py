@@ -1,17 +1,18 @@
 # Escreva a funcao interseccao(lista1, lista2) abaixo:
 # Arthur Vinicius Santos Silva   RA:1903365
 def interseccao(lista1, lista2):
-    lista_interseccao = []
-    for i in range(len(lista1)):
-        if lista1[i] in lista2:
-            lista_interseccao.append(lista1[i])
+    lista_interseccao = [] #lista vazia
+    for i in range(len(lista1)): #percorre a lista
+        if lista1[i] in lista2: #verifica se os itens da lista 1 estão na 2
+            lista_interseccao.append(lista1[i]) #adiciona os que estão nas 2 em outra
 
-    for i in range(len(lista_interseccao)):
-        if lista_interseccao.count(lista_interseccao[i]) > 1:
-            #lista_interseccao.pop(lista_interseccao[i])
+        list_intersec_sem_duplicados = [] #cria lista vazia
+        for i in lista_interseccao: #percorre a lista
+            if i not in list_intersec_sem_duplicados: #se não esta na lista, adiciona
+                list_intersec_sem_duplicados.append(i) #adiciona a lista
 
-            lista_interseccao.sort()
-    return lista_interseccao
+            list_intersec_sem_duplicados.sort() #coloca em ordem crescente
+    return list_intersec_sem_duplicados
 
 # Programa principal (ja implementado, voce nao precisa se preocupar com o codigo partir deste ponto)
 lista1 = eval(input())
