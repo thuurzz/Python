@@ -1,5 +1,4 @@
 #Arthur Vinicius Santos Silva RA:1903365
-#professor, trabalho de fds, não terminei por completo, irei revisar!
 
 
 def cria_matriz(linhas, colunas, preenchimento):
