@@ -6,9 +6,7 @@
 
 def impar(lista):
     cont = len(lista)
-    p = 0
     ind = 0
-    ip = 0
     for i in range(cont):
         if lista[i] % 2 != 0:
             ind = i
