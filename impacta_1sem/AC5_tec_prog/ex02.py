@@ -8,7 +8,7 @@ def interseccao(lista1, lista2):
 
         list_intersec_sem_duplicados = [] #cria lista vazia
         for i in lista_interseccao: #percorre a lista
-            if i not in list_intersec_sem_duplicados: #se não esta na lista, adiciona
+            if i not in list_intersec_sem_duplicados: #se não esta na lista, adiciona, se já tem não adiciona
                 list_intersec_sem_duplicados.append(i) #adiciona a lista
 
             list_intersec_sem_duplicados.sort() #coloca em ordem crescente
