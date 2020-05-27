@@ -1,33 +1,18 @@
-def interseccao(lista1, lista2):
-    final = []
-    aux = 0
-    m = 0
-    n = 0
-
-    m = len(lista1)
-    n = len(lista2)
-
-    for i in range(m):
-        for j in range(n):
-            if lista1[i] == lista2[j]:
-                aux = lista1[i]
-                final.append(aux)
-
-    final2 = []
-    for item in final:
-        if item not in final2:
-            final2.append(item)
-
-    final2.sort()
-    return final2
+# função inverte primeiro e ultimo item da lista
+def inverte_indice(vetor): #função para inverter primeiro e ultimo item da lista
+   ult = len(vetor) - 1
+   primeiro_da_lista = vetor[0] #remove o primeiro da lista e atribui a var
+   ultimo_da_lista = vetor[ult] #remove o ultimo da lista e atribui a var
+   vetor[ult] = primeiro_da_lista #adiciona o primeiro item removido a ultimo da lista
+   vetor[0] = ultimo_da_lista #adiciona ultimo vetor a primeira posição da lista
+   return vetor
 
 
-a = [10, 11, 14, 20, 8, 2, 14, 3, 11]
-b = [1, 10, 9, 14, 20, 14]
+#vetor = [2, 6, 4, 1, 9] #vetor do exemplo
+#vetor = [1, 2, 3, 4, 5] #vetor de teste para inversão
+vetor = ['a', 'b', 'c', 'd', 'e'] #vetor de teste para inversão
+#vetor = [False, True, False, True] #vetor de teste para inversão
 
-x = interseccao(a, b)
-print(x)
 
-
-for item in a:
-    print(item)
+lista = inverte_indice(vetor)
+print(f'O vetor com o primeiro e ultimo itens com posição invertida é: {lista}')
