@@ -12,9 +12,9 @@ def inverte_indice(vetor): #função para inverter primeiro e ultimo item da lis
     return vetor
 
 
-vetor = [2, 6, 4, 1, 9] #vetor do exemplo
+#vetor = [2, 6, 4, 1, 9] #vetor do exemplo
 #vetor = [1, 2, 3, 4, 5] #vetor de teste para inversão
-#vetor = ['a', 'b', 'c', 'd', 'e'] #vetor de teste para inversão
+vetor = ['a', 'b', 'c', 'd', 'e'] #vetor de teste para inversão
 #vetor = [False, True, False, True] #vetor de teste para inversão
 
 
