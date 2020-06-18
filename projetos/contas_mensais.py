@@ -9,7 +9,7 @@ def soma_casa():
             break
         casa.append(valor)
     total_casa = sum(casa)
-    print(f'Os valores foram:{casa} o valor das contas da casa é: {total_casa}R$')
+    print(f'\033[1;7mOs valores foram:{casa} o valor das contas da casa é: {total_casa}R$\033[m')
     return total_casa
 
 
@@ -22,7 +22,7 @@ def soma_rone(total_cs):
             break
         rone.append(valor)
     total_rone = sum(rone) + (total_cs / 3)
-    print(f'Os valores foram:{rone}, somados as contas da casa dividas, no valor de {total_cs / 3} o valor total para Rone é: {total_rone}')
+    print(f'\033[1;7mOs valores foram:{rone}, somados as contas da casa dividas, no valor de {total_cs / 3} o valor total para Rone é: {total_rone}\033[m')
     return total_rone
 
 
@@ -35,7 +35,7 @@ def soma_bia(total_cs):
             break
         bia.append(valor)
     total_bia = sum(bia) + (total_cs / 3)
-    print(f'Os valores foram:{bia}, somados as contas da casa dividas, no valor de {total_cs / 3} o valor total para Bia é: {total_bia}')
+    print(f'\033[1;7mOs valores foram:{bia}, somados as contas da casa dividas, no valor de {total_cs / 3} o valor total para Bia é: {total_bia}\033[m')
     return total_bia
 
 
@@ -48,7 +48,7 @@ def soma_loze(total_cs):
             break
         loze.append(valor)
     total_loze = sum(loze)
-    print(f'Os valores foram:{loze}, somados as contas da casa dividas, no valor de {total_cs / 3} o valor total para Loze é: {total_loze}')
+    print(f'\033[1;7mOs valores foram:{loze}, somados as contas da casa dividas, no valor de {total_cs / 3} o valor total para Loze é: {total_loze}\033[m')
     return total_loze
 
 def soma_inquilino():
@@ -57,7 +57,7 @@ def soma_inquilino():
     i = 20
     total  = (a / 6) + (l / 2) + i
     total = round(total)
-    print(f'O valor total para cada inquilino é de {total}')
+    print(f'\033[1;7mO valor total para cada inquilino é de {total}.\033[m')
 
 
 print('Defina os valores da Casa para divisão aos outros membros!')
