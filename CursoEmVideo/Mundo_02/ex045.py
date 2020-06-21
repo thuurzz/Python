@@ -1,7 +1,7 @@
-# Jokenpô!
-
 import random
 
+# Jokenpô!
+# Exercício Python 45: Crie um programa que faça o computador jogar Jokenpô com você.
 print('=' * 10)
 print('JOKENPÔ')
 print('=' * 10)
