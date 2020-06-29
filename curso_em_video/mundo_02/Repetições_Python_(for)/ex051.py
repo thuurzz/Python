@@ -8,5 +8,10 @@ n = 10  # mostra os 10 primeiros elementos
 ult = a1 + (n - 1) * r
 ult += 1
 
+print('=' * 30)
+print('10 PRIMEIROS TERMOS DE UMA PA')
+print('=' * 30)
+
 for i in range(a1, ult, r):
-    print(i)
+    print(i, end='=> ')
+print('FIM')

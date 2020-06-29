@@ -19,6 +19,6 @@ print('{} x10 = {}'.format(n, (n * 10)))
 
 n = int(input('Digite um número para exibir sua tabuada: '))
 for i in range(1, 11, 1):
-    total = i * n
-    print(f'{i} x {n} = {total}')
+    total = n * i
+    print(f'{n} x {i} = {total}')
     print(15 * '=')

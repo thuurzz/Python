@@ -4,7 +4,7 @@
 import time
 for i in range(10, -1, -1):
     print(i)
-    time.sleep(0)
-print('\033[7mzuuuuuuuuuuuuuuuuum', 13 * 'ta ', '\033[m')
-print('\033[7mbuuuuum!\033[m')
-print('\033[7mROJÃO 13 TIROS!\033[m')
+    time.sleep(0.8)
+print('zuuuuuuuuuuuuuuuuum', 13 * 'ta ')
+print('buuuuum!')
+print('ROJÃO 13 TIROS!')

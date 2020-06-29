@@ -11,19 +11,21 @@ qtd_mulheres = 0
 
 
 for i in range(4):
-    nome = input('Qual seu nome: ')
+    print('=' * 30)
+    print(f'{i + 1}º PESSOA')
+    nome = input('Qual seu nome: ').strip()
     idade = int(input('Qual sua idade: '))
     sexo = input('Sexo: [M] ou [F]:').upper()
     
     # recebe as idades e soma
     media_idades += idade
     
-    # verifica se é o mais velho e guarda o nome
-    if idade > idade_velho:
+    # verifica se é o homem mais velho e guarda o nome
+    if idade > idade_velho and sexo == 'M':
         nome_velho = nome
         idade_velho = idade
         
-    # conta quantidade de mulheres
+    # conta quantidade de mulheres com menos de 20 anos
     if sexo == 'F' and idade < 20:
         qtd_mulheres += 1
      
