@@ -24,9 +24,10 @@ while i < n:
     i += 1
 
 # verifica se quer exxibir mais termos
-mais_termos = 0
 mais_termos = int(input('Gostaria de mostrar mais termos? Quantos? Se não, digite 0: '))
-if mais_termos == 0:  # caso não queira, entra 0, encerra o programa
+
+# caso não queira, entra 0, encerra o programa
+if mais_termos == 0:
     print('FIM')
 else:  # com mais termos
     a1 = an  # O primeiro termo passa a ser o ultimo da primeira PA

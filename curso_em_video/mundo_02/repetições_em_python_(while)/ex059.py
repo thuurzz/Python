@@ -1,13 +1,29 @@
+# Exercício Python 059: Crie um programa que leia dois valores e mostre um menu na tela:
+"""
+[ 1 ] somar
+
+[ 2 ] multiplicar
+
+[ 3 ] maior
+
+[ 4 ] novos números
+
+[ 5 ] sair do programa
+
+Seu programa deverá realizar a operação solicitada em cada caso.
+"""
+
 print('Digite dois valores, depois selecione a opção desejada.')
 n1 = int(input('Digite o 1º valor: '))
 n2 = int(input('Digite o 2º valor: '))
 
 opc = int(input('''Digite a operação desejada:
-[1]somar
-[2]multiplicar
-[3]maior
-[4]novos números
-[5]sair do programa\n'''))
+        [1]somar
+        [2]multiplicar
+        [3]maior
+        [4]novos números
+        [5]sair do programa\n
+'''))
 
 while not opc == 5:
     if opc == 1:
@@ -52,4 +68,5 @@ while not opc == 5:
         [3]maior
         [4]novos números
         [5]sair do programa\n'''))
-print('Progrma finalizado.')
+print('=-' * 50)
+print('Progrma finalizado, volte sempre!')

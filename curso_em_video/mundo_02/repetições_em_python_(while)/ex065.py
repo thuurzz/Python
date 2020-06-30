@@ -1,5 +1,5 @@
-i = 1  # inicia o contador em 1 para ser != de 0 no while
 maior = menor = media = soma = div_media = 0  # inicia as var em 0
+i = 1  # inicia o contador em 1 para ser != de 0 no while
 while i != 0:
     n = int(input('Digite um número: '))  # pede o número
     if n != 0:  # se o número digitado for diferente de 0
@@ -13,11 +13,10 @@ while i != 0:
             maior = n
         if n < menor:
             menor = n
-            
         i += 1  # +1 ao contador/flag
 
-    opc = input('Deseja adicionar mais um número: [S]/[N]: ').strip().upper()
-    if opc[0] == 'N':
+    opc = input('Deseja adicionar mais um número: [S]/[N]: ').strip().upper()[0]
+    if opc == 'N':
         i = 0
 
 

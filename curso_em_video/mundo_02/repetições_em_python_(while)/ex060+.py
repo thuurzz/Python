@@ -2,11 +2,14 @@
 # Exemplo: 5! = 5 x 4 x 3 x 2 x 1 = 120
 
 n = int(input('Digite um número para exibir seu fatorial: '))  # pede o número
-cont = 1  # var contadora
+cont = n  # var contadora
 fat = 1
-while cont <= n:  # vai de 1 até o número fatorial
+print(f'Calculando {n}!')
+while cont > 0:  # vai de 1 até o número fatorial
+    print(f'{cont} x {fat}')
     fat *= cont  # multiplica primeiro por 1 depois atualiza o fat com a próx multiplicação
-    cont += 1  # adicona 1 ao contador
+    cont -= 1  # adicona 1 ao contador
+    print(f'Total = {fat}')
 
 fatf = 1
 for i in range(1, n + 1):
