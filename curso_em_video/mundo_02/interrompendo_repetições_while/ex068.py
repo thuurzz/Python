@@ -1,7 +1,7 @@
 import random, time
-win = True
+
 vit = 0
-while win:
+while True:
     # jogador escolhe par ou impar! O outro é atribuido ao PC.
     jog = int(input('ESOLHA: [1]IMPAR! [2]PAR!'))
     pc = ''
@@ -28,8 +28,7 @@ while win:
         if 0 <= n_jog <= 5:
             break
 
-    # exibe
-
+    # exibe delay
     print('IMPAR...')
     time.sleep(1)
     print('OU..')
@@ -53,4 +52,4 @@ while win:
     else:
         print('PC venceu!')
         print(f'Após {vit} vitórias, jogador perdeu essa!')
-        win = False
+        break

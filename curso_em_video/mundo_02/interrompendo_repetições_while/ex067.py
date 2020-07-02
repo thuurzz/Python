@@ -2,7 +2,7 @@
 n = int(input('Digite um número para exibir sua tabuada, para terminar, digite um número negativo. '))
 
 # laço infito, até digitar negativo
-while n >= 0:
+while True:
     if n >= 0:  # se n positivo, exibe tabuada de n
         print('=' * 20)
         for numero in range(1, 11):
