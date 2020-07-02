@@ -13,6 +13,9 @@ while True:
     # jogador escolhe par ou impar! O outro é atribuido ao PC.
     jog = int(input('ESOLHA: [1]IMPAR! [2]PAR!'))
     pc = ''
+    while not (jog == 1 or jog == 2):
+        jog = int(input('ESOLHA: [1]IMPAR! [2]PAR!'))
+
     if jog == 1:
         jog = 'IMPAR!'
         pc = 'PAR!'
