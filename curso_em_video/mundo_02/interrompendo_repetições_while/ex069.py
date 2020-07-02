@@ -8,23 +8,16 @@
 mais18 = qtd_homens = fem_menos_20 = 0
 while True:
     # pede idade
-    while True:
-        idade = int(input('Digite sua idade: '))
-        if idade >= 0:
-            if idade > 18:
-                mais18 += 1  # add +1 a cada > 18 anos
-        break
+    idade = int(input('Digite sua idade: '))
+    if idade > 18:
+        mais18 += 1  # add +1 a cada > 18 anos
     # pede sexo
-    while True:
-        sexo = input('Selecione seu sexo [M]/[F]: ').strip().upper()[0]
-        if sexo in 'MF':
-            if sexo == 'M':
-                qtd_homens += 1  # Se do sexo masc +1
-        break
+    sexo = input('Selecione seu sexo [M]/[F]: ').strip().upper()[0]
+    if sexo == 'M':
+        qtd_homens += 1  # Se do sexo masc +1
     # adiciona aos contadores se mulher menor de 20 anos
     if idade < 20 and sexo == 'F':
         fem_menos_20 += 1
-
     # pergunta se quer continuar
     opc = input('Deja continuar? [S/N]:').strip().upper()[0]
     while opc not in 'SN':
