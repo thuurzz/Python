@@ -1,5 +1,13 @@
 import random, time
 
+# Exercício Python 068: Faça um programa que jogue par ou ímpar com o computador.
+# O jogo só será interrompido quando o jogador perder,
+# mostrando o total de vitórias consecutivas que ele conquistou no final do jogo.
+
+print(20 * '=-')
+print('JOGO DO IMPAR OU PAR!')
+print(20 * '=-')
+
 vit = 0
 while True:
     # jogador escolhe par ou impar! O outro é atribuido ao PC.
@@ -47,9 +55,9 @@ while True:
 
     # compara com total e mostra vencedor
     if total == jog:
-        print('Jogador venceu!')
+        print('\33[7mJogador venceu!\33[m')
         vit += 1
     else:
-        print('PC venceu!')
+        print('\33[7mPC venceu!\33[m')
         print(f'Após {vit} vitórias, jogador perdeu essa!')
         break
