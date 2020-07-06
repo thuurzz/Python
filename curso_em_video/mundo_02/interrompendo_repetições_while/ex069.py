@@ -7,12 +7,21 @@
 
 mais18 = qtd_homens = fem_menos_20 = 0
 while True:
+    print('-' * 20)
+    print('*Cadastro de Pessoas*')
+    print('-' * 20)
+
     # pede idade
-    idade = int(input('Digite sua idade: '))
+    idade = int(input('Idade: '))
+    while not (0 <= idade <= 110):
+        idade = int(input('Digite idade entre 0 e  110 anos: '))
     if idade > 18:
         mais18 += 1  # add +1 a cada > 18 anos
     # pede sexo
-    sexo = input('Selecione seu sexo [M]/[F]: ').strip().upper()[0]
+    sexo = input('Sexo [M]/[F]: ').strip().upper()[0]
+    while sexo not in 'MF':
+        sexo = input('Use [M]/[F] para selecioanar sexo: ').strip().upper()[0]
+    print('-' * 20)
     if sexo == 'M':
         qtd_homens += 1  # Se do sexo masc +1
     # adiciona aos contadores se mulher menor de 20 anos
@@ -24,7 +33,7 @@ while True:
         opc = input('Deja continuar? [S/N]:').strip().upper()[0]
     if opc == 'N':
         break
-
+print('FINAL DO PROGRAMA!')
 # A: quantas tem mais de 18 anos
 print(f'{mais18} desta lista tem mais de 18 anos.')
 

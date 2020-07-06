@@ -5,7 +5,7 @@
 # C) qual é o nome do produto mais barato.
 
 print('=' * 20)
-print('*CADASTRO DE PRODUTO*')
+print('*LOJA DO ZECAURUBU TECH*')
 print('=' * 20)
 
 total = maisq_1k = cont = mais_barato = 0
