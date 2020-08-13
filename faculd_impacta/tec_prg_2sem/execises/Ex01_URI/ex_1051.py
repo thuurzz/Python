@@ -20,13 +20,13 @@ else:
         if s > 0 and s <= 1000:
             faixa1 += 1
             s -= 1
-        faixa1 = faixa1 * (8 / 100)
-        faixa2 = faixa2 * (18 / 100)
-        faixa3 = faixa3 * (28 / 100)
-        ir = faixa1 + faixa2 + faixa3
+    faixa1 = faixa1 * (8 / 100)
+    faixa2 = faixa2 * (18 / 100)
+    faixa3 = faixa3 * (28 / 100)
+    ir = faixa1 + faixa2 + faixa3
 
 
 if ir == 'Isento':
     print(ir)
 else:
-    print(f'R$ {ir:.2f}')
+    print(f'R$ {ir}')
