@@ -1,3 +1,4 @@
+#URI 1051
 # lê o salário em float
 s = float(input(''))
 
