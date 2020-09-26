@@ -1,5 +1,3 @@
-# URI Online Judge | 1084
-
 while True: # O programa fica em loop ate entrar num == 0 e dig == 0
     num, dig = input().split()
     num = int(num)
@@ -28,7 +26,3 @@ while True: # O programa fica em loop ate entrar num == 0 e dig == 0
             dig-=1
     # exibe sequência restante
     print(''.join(seq))
-    
-
-
-
