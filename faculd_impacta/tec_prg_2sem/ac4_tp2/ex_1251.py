@@ -1,6 +1,4 @@
-# URI Online Judge | 1211
-
-#inicia o looping até que o usuario digite 0 nas quantidades de numeros
+#inicia o looping até que o usuário digite 0 nas quantidades de numeros
 while True:
     f=0
     x=int(input())
@@ -24,5 +22,5 @@ while True:
             else:
                 break
 
-    #printa o resultado das repetições
+    #exibe o resultado das repetições
     print(f)
