@@ -10,7 +10,7 @@ while True:
 
     #inicia a lista de numeros "num" e começa o loop para adição dos 
     # números a lista
-
+    
     num=[]
     for i  in range (x):
         num.append(input())

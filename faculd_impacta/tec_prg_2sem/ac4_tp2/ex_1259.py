@@ -1,5 +1,5 @@
 # URI Online Judge | 1259
-
+#OK
 lista_impar = []
 lista_par = []
 
