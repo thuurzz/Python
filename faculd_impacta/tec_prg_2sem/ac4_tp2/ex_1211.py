@@ -1,28 +1,24 @@
 # URI Online Judge | 1211
+# https://www.urionlinejudge.com.br/judge/pt/problems/view/1211
 
-#inicia o looping até que o usuario digite 0 nas quantidades de numeros
+#inicia o looping até que o usuário digite 0 nas quantidades de numeros
 while True:
-    f=0
-    x=int(input())
-    #recebe o numero e verifica se é igual a 0
-    if x==0:
+    try:
+        # Quantidade de telefones
+        n = int(input())
+
+        # Inicia lista e adiciona telefones
+        lTel = []
+        for i in range(n):
+            tel = input()
+            lTel.append(tel)
+
+        econ = 0
+        for i in range(len(lTel)-1):
+            for tel in range(4):
+                if lTel[i][0] == lTel[i+1][0]:
+                    if lTel[i][tel] == lTel[i+1][tel]:
+                        econ += 1
+        print(econ)
+    except EOFError:
         break
-
-    #inicia a lista de numeros "num" e começa o loop para adição dos 
-    # números a lista
-    
-    num=[]
-    for i  in range (x):
-        num.append(input())
-
-
-    #inicia a verificação se os numeros são iguais e se o primeiro é igual
-    for i in range(len(num)-1):
-        for j in range (len(num[i])):
-            if(num[i][j]==num[i+1][j]):
-                f+=1
-            else:
-                break
-
-    #printa o resultado das repetições
-    print(f)
