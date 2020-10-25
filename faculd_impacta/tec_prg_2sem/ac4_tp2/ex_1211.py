@@ -23,3 +23,14 @@ while True:
         print(econ)
     except EOFError:
         break
+
+
+'''
+Caso teste que falha
+4
+11112222
+22221111
+22223333
+11111111
+4 (Deveria dar 8)
+'''
