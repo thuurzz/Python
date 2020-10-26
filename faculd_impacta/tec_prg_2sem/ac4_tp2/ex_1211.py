@@ -62,5 +62,14 @@ Caso teste que falha
 22221111
 22223333
 11111111
-4 (Deveria dar 8)
+8 (Resultado)
+
+6
+123456
+123465
+123546
+123564
+123645
+123654
+18 (Resultado)
 '''
