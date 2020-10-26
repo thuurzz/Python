@@ -11,7 +11,6 @@ def selection_sort(vet):
                 p = j
             vet[i], vet[p] = vet[p], vet[i]
 
-resul=[]
 while True:
     try:
         # Quantidade de telefones
@@ -27,15 +26,19 @@ while True:
             selection_sort(lTel)
 
         econ = 0
+        # Passeia plea lista de telefones
         for i in range(len(lTel) - 1):
+            # Passeia pelos caracteres
             for tel in range(len(lTel[i])):
+                # verifica se o primeiro caractere do de cima e de baixo, são iguais
                 if lTel[i][0] == lTel[i + 1][0]:
+                    # Tendo primeiro caractere igual, testa os outros
                     if lTel[i][tel] == lTel[i + 1][tel]:
+                        # Cada caractere igual, que não será impresso, adiciona +1 para a acumuladora
                         econ += 1
-        resul.append(econ)
+        # Exibe quantidade de caracteres economizados a cada loop
+        print(econ)
     except EOFError:
-        for i in resul:
-            print(i)
         break
 
 
