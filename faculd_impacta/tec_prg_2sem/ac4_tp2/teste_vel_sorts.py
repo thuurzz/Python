@@ -22,17 +22,24 @@ y = [50, 28, 73, 87, 37, 31, 17, 21, 61, 57, 66, 11, 93, 47, 82]
 
 inicio = time.time()
 # Selection Sort
-y = selection_sort(y)
-print(f'Lista Selection Sort:{y}')
+a = selection_sort(y)
+print(f'Lista Selection Sort:{a}')
 final = time.time()
 tempo = inicio - final
 print(f'{final:.6f}')
 
 inicio = time.time()
 # Quick Sort
-y = qsort(y)
-print(f'Lista Quick Sort:{y}')
+b = qsort(y)
+print(f'Lista Quick Sort:{b}')
 final = time.time()
 tempo = inicio - final
 print(f'{final:.6f}')
 
+inicio = time.time()
+# Quick Sort
+c = y.sort()
+print(f'Lista Quick Sort:{c}')
+final = time.time()
+tempo = inicio - final
+print(f'{final:.6f}')

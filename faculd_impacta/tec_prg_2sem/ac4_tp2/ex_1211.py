@@ -31,19 +31,19 @@ while True:
             tel = input()
             lTel.append(tel)
             # implementar algoritmo de ordenação mais eficiente
-            #lTel.sort() #Time limit exceeded 
-            selection_sort(lTel) #Time limit exceeded 
+            lTel.sort() #Time limit exceeded 
+            #selection_sort(lTel) #Time limit exceeded 
             #lTel = qsort(lTel) #Time limit exceeded 
 
         econ = 0
         # Passeia pela lista de telefones.
-        for i in range(len(lTel)-1):
+        for i in range(1, len(lTel), 1):
             # Passeia pelos caracteres.
-            for tel in range(len(lTel[0])):
+            for j in range(len(lTel[0])):
                 # verifica se o primeiro caractere do de cima e de baixo, são iguais.
-                if lTel[i][0] == lTel[i+1][0]:
+                if lTel[i][0] == lTel[i-1][0]:
                     # Tendo primeiro caractere igual, testa os outros.
-                    if lTel[i][tel] == lTel[i+1][tel]:
+                    if lTel[i][j] == lTel[i-1][j]:
                         # Cada caractere igual, que não será impresso, adiciona +1 para a acumuladora.
                         econ += 1
                     else:
