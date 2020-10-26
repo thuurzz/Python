@@ -37,7 +37,7 @@ tempo = inicio - final
 print(f'{final:.6f}')
 
 inicio = time.time()
-# Quick Sort
+# Sort
 c = y.sort()
 print(f'Lista Quick Sort:{c}')
 final = time.time()

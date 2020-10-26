@@ -2,24 +2,6 @@
 # https://www.urionlinejudge.com.br/judge/pt/problems/view/1211
 
 # inicia o looping até EOFError
-
-def selection_sort(vet):
-    for i in range(len(vet) - 1):
-        p = i
-        for j in range(i + 1, len(vet)):
-            if vet[j] < vet[i]:
-                p = j
-            vet[i], vet[p] = vet[p], vet[i]
-        
-
-def qsort(vet):
-    if len(vet) > 1:
-        vet2 = [x for x in vet[1:] if x < vet[0]]
-        vet3 = [x for x in vet[1:] if x >= vet[0]]
-        vet = qsort(vet2) + vet[:1] + qsort(vet3)
-    return vet
-
-
 while True:
     try:
         # Quantidade de telefones
@@ -30,10 +12,9 @@ while True:
         for i in range(n):
             tel = input()
             lTel.append(tel)
-            # implementar algoritmo de ordenação mais eficiente
-            lTel.sort() #Time limit exceeded 
-            #selection_sort(lTel) #Time limit exceeded 
-            #lTel = qsort(lTel) #Time limit exceeded 
+        # implementar algoritmo de ordenação mais eficiente
+        lTel.sort() 
+        
 
         econ = 0
         # Passeia pela lista de telefones.
@@ -53,23 +34,3 @@ while True:
         print(econ)
     except EOFError:
         break
-
-
-'''
-Caso teste que falha
-4
-11112222
-22221111
-22223333
-11111111
-8 (Resultado)
-
-6
-123456
-123465
-123546
-123564
-123645
-123654
-18 (Resultado)
-'''
