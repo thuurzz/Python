@@ -7,3 +7,5 @@ while True:
 	if n == 0 and m == 0:
 		print('0 0')
 		break
+
+	

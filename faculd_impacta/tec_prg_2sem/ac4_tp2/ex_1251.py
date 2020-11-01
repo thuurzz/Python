@@ -1,26 +1,34 @@
-#inicia o looping até que o usuário digite 0 nas quantidades de numeros
+Cont = 0
 while True:
-    f=0
-    x=int(input())
-    #recebe o numero e verifica se é igual a 0
-    if x==0:
-        break
 
-    #inicia a lista de numeros "num" e começa o loop para adição dos 
-    # números a lista
+    try:
 
-    num=[]
-    for i  in range (x):
-        num.append(input())
+        Texto = input()
+        Caracteres = [x for x in Texto]
 
+        Caracteres.sort(reverse=True)
 
-    #inicia a verificação se os numeros são iguais e se o primeiro é igual
-    for i in range(len(num)-1):
-        for j in range (len(num[i])):
-            if(num[i][j]==num[i+1][j]):
-                f+=1
+        Memoria = {}
+        
+        for i in range(len(Caracteres)):
+
+            if Caracteres[i] in Memoria:
+                
+                Memoria[Caracteres[i]] = Memoria[Caracteres[i]]+1
+
             else:
-                break
 
-    #exibe o resultado das repetições
-    print(f)
+                Memoria.update({Caracteres[i]:1})
+
+        if len(Caracteres) != 0 and Cont != 0:
+            print()
+                
+        for j in sorted(Memoria, key=Memoria.get):
+            
+            print(ord(j), Memoria[j])
+
+        Cont += 1
+        
+    except EOFError:
+
+        break
