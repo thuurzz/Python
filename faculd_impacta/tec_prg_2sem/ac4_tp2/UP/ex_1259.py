@@ -1,5 +1,6 @@
 # URI Online Judge | 1259
-#OK
+# https://www.urionlinejudge.com.br/judge/pt/problems/view/1259
+
 lista_impar = []
 lista_par = []
 
