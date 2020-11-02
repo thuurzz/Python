@@ -25,51 +25,31 @@ for i in range(qtdTestes):
 
     # Divide 100% na pela quantidade de itens na lista
     porct = 100 / len(listArv)
-
-    # Tranforma lista de arvores em set, para ordenar e tirar os repetidos.
+    
+    # Transforma lista de arvores em set, para ordenar e tirar os repetidos.
     ordLarv = set(listArv) # Remove repetidos com set
     ordLarv = list(ordLarv) # Transforma set em lista
     ordLarv.sort() # Ordena lista
+    listArv.sort()
+
 
     # Exibe cada item da lista sem repetir, multiplica a quantidade de entradas que encontra na lista, pela porcentagem encontrada de cada quantidade.
-    for j in ordLarv:
-        print(f'{j} {listArv.count(j) * porct:.4f}')
+    # Começo da lista para verificar
+    comeco = 0
+    # Passeia pela lista ordenada sem repetidos
+    for esp in ordLarv:
+        # Acumulador de vezes que aparece na lista
+        cont = 0
+        # Passeia pela lista de repetidos ordenados
+        for j in range(comeco, len(listArv), 1):
+            # Se o item atual for igual ao da lista de repetidos cont += 1.
+            if esp == listArv[j]:
+                cont += 1
+                # Indica começo da próxima verificação para diminuir busca
+                comeco += 1
+        # Exibe espécie atual e multiplica a quantidade de vezes que aparece pelo percentual.
+        print(f'{esp} {cont * porct:.4f}')
+        
+    # Imprime linha vazia entre 2 casos de teste, nu ultimo não.
     if i+1 != qtdTestes:
         print()
-
-'''
-2
-
-Red Alder
-Ash
-Aspen
-Basswood
-Ash
-Beech
-Yellow Birch
-Ash
-Cherry
-Cottonwood
-Ash
-Cypress
-Red Elm
-Gum
-Hackberry
-White Oak
-Hickory
-Pecan
-Hard Maple
-White Oak
-Soft Maple
-Red Oak
-Red Oak
-White Oak
-Poplan
-Sassafras
-Sycamore
-Black Walnut
-Willow
-
-Red Alder
-Ash
-'''
