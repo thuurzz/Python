@@ -8,7 +8,7 @@ input()
 for i in range(qtdTestes):
     listArv = []
     while True:
-        if i+1 == qtdTestes:
+        if i + 1 == qtdTestes:
             # Coloca cada espécie de árvore na lista.
             try:
                 arv = input()
