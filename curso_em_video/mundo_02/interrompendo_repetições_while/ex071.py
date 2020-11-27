@@ -8,8 +8,8 @@ saque = int(input('Digite o valor a ser sacado: R$ '))
 # inicia a quantidade de notas
 nota50 = nota20 = nota10 = nota1 = 0
 
-# enquanto o valor é maior que o da nota, descresce do saque, soma 1 ao contador
-while saque > 50:
+# enquanto o valor é maior que o da nota, decresce do saque, soma 1 ao contador
+while saque >= 50:
     saque -= 50
     nota50 += 1
 while saque >= 20:
