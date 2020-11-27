@@ -18,7 +18,7 @@ for i in range(qtdTestes):
                     break
                 elif especie not in dictArv:
                     dictArv.update({especie: 1 })
-                elif especie in dictArv:
+                else:
                     dictArv[especie] += 1
                 cont += 1
         except EOFError:

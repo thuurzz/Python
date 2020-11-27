@@ -40,7 +40,7 @@ while True:
             pontGeral[time2-1] += 1
         else:
             pontGeral[time1-1] += 1
-            pontGeral[time2-1] += 2\
+            pontGeral[time2-1] += 2
         
         #pontos feitos por partida
         pontPartidas[time1-1] += pont1
