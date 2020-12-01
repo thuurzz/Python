@@ -1,7 +1,5 @@
 # advinhacao.py
-
 import random
-
 
 def jogar():
     print(40 * '=')
@@ -54,8 +52,6 @@ def jogar():
                     print(f'O número secreto era {numero_secreto}. Você fez {pontos} pontos.')
         pontos_perdidos = abs((numero_secreto - chute))
         pontos -= pontos_perdidos
-
-    #print(f'Fim do jogo, o número era: {numero_secreto}.')  # mostra número secreto
 
 
 if __name__ == '__main__':
