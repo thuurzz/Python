@@ -1,4 +1,4 @@
-#ex079.py
+#EX079
 
 # cria lista
 lNum = []

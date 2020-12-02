@@ -1,4 +1,4 @@
-# ex078
+#EX078
 
 # lê valores e coloca na lista
 valores = []
