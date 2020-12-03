@@ -6,7 +6,7 @@ lNum = []
 # Pede num e coloca na lista se já não tiver
 while True:
     n = int(input('Digite um valor: '))
-    if not n in lNum: 
+    if n not in lNum:
         lNum.append(n)
         print('Valor adicionado com sucesso!')
     else:
