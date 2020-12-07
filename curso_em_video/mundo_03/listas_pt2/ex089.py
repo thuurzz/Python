@@ -4,7 +4,7 @@ bd_alunos = list()
 
 while True:
     # Lê dados dos alunos
-    nome = input('Nome do aluno:')
+    nome = input('Nome do aluno:').upper()
     nota1 = float(input('Nota 1: '))
     nota2 = float(input('Nota 2: '))
     # Coloca nome na lista
