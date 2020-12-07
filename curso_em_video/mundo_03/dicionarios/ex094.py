@@ -17,7 +17,6 @@ while True:
 
     # Coloca a pessoa na lista de cadastro
     cadastro.append(pessoa.copy())
-    pessoa.clear()
 
     # Pergunta se continua
     opc = str(input('Deseja continuar? [S/N]: ')).lower()
