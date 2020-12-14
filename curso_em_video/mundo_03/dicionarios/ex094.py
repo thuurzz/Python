@@ -25,7 +25,7 @@ while True:
     if opc == 'n':
         break
 
-print(f'{" CADSTRO ":=^30}')
+print(f'{" CADASTRO ":=^30}')
 # A) Quantas pessoas foram cadastradas
 print(f'A) Ao todo temos {len(cadastro)} pessoas cadastradas.')
 print('=' * 30)

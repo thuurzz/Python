@@ -1,4 +1,15 @@
+class Pessoa:
+    
+    def __init__(self, nome):
+        self.nome = nome
 
-print(f"{' TABELA DE JOGADORES ':=^50}")
-print(f'{"COD":<5} {"NOME":<10}{"GOLS":<20}{"TOLTAL DE GOLS":<5}')
-print(f"{'=' * 50}")
+    def apresenta(self):
+        print('Oi eu sou o ' + self.nome)
+
+joao = Pessoa('joao')
+maria = Pessoa('maria')
+
+joao.apresenta()
+print(joao.nome)
+maria.apresenta()
+print(maria.nome)

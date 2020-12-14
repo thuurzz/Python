@@ -51,7 +51,6 @@ while True:
         # Exibe total de gols nas partidas    
         print(f'Foi um total de {bdJogadores[idJog]["Total de Gols"]} de gols.')
         print('=' * 50)
-
     except IndexError:
         # Se ID não está na lista, pede de novo
         print(f'O ID deste jogador não conta na lista, tente novamente.')

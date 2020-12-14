@@ -24,7 +24,10 @@ while True:
     procuraAluno = int(input('Mostrar notas de qual aluno? (999 interrompe)'))
     if procuraAluno == 999:
         break
-    print(f'As notas do(a) aluno: {bd_alunos[procuraAluno][0]}, foram: {bd_alunos[procuraAluno][1]}')
+    elif procuraAluno >= len(bd_alunos)-1:
+        print('ID não encontrado, tente novamente.')
+    else:
+        print(f'As notas do(a) aluno: {bd_alunos[procuraAluno][0]}, foram: {bd_alunos[procuraAluno][1]}')
 print('-' * 35)
 print('FIM DO PROGRAMA')
 
