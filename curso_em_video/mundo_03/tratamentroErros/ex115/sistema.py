@@ -1,7 +1,8 @@
 #  SISTEMA PRINCIPAL
 
-from lib.interface import *
 import time
+from lib.arquivo import *
+from lib.interface import *
 
 # Cores para o terminal
 cor = {

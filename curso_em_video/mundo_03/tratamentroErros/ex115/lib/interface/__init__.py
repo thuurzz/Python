@@ -1,7 +1,3 @@
-import time
-
-# Funções de leitra e impressão de dados
-
 # Cores para o terminal
 cor = {
     'vermelho': '\033[1;31m',
@@ -56,44 +52,4 @@ def menu(list):
     linha()
     opt = leiaInt(f'{cor["verde"]}Digite a opção desejada: {cor["reset"]}')
     return opt
-
-
-def cadastraPessoa():
-    titulo('CADATRO DE PESSOAS', txtCor="bgpreto")
-    # Abre arquivo para cadastro de nome e idade.
-    with open('BDcadastro.txt', '+a') as cadastro:
-        qtdCad = int(input('Quantidade de cadastros: '))
-        for i in range(qtdCad):
-            nome = input('Nome: ')
-            idade = int(input('Idade: '))
-            cadastro.write(f'ID:{i+1:0>4} | Nome: {nome:.<25} | Idade: {idade} \n')
-    time.sleep(1)
-    print(f'{cor["verde"]}Cadastro realizado com sucesso.{cor["reset"]}')
-    linha()
-
-
-def mostraCadastro():
-    try:
-        with open('BDcadastro.txt', 'r') as cadastro:
-            txt = cadastro.read()
-            titulo('CADASTRO', txtCor="bgpreto")
-            print(txt)
-            linha()
-    except:
-        print(f'{cor["vermelho"]} ERRO: Arquivo inexistente ou não encontrado.{cor["reset"]}')
-
-
-def limpaCadastro():
-    titulo('LIMPEZA DE CADASTRO', txtCor="bgpreto")
-    while True:
-        opt = input(f'{cor["vermelho"]}Tem certeza que deseja limpar cadastro:[S/N]{cor["reset"]}').strip().upper()[0]
-        if opt in 'SN':
-            break
-    time.sleep(1)
-    if opt == 'S':
-        cadastro = open('BDcadastro.txt', 'w')
-        cadastro.close()
-        print(f'{cor["verde"]}Limpeza realizada com sucesso.{cor["reset"]}')
-    else:
-        print(f'{cor["vermelho"]}Operação cancelada.{cor["reset"]}')
 
